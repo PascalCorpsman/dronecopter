@@ -1,1 +1,12 @@
+-----------------Websites:-----------------
+
 https://bits-feed.org/monocopters/
+
+-------------------------------------------
+
+-----------------Sources-------------------
+
+paper: James Paulos and Mark Yim
+https://www.modlabupenn.org/wp-content/uploads/paulos_flight_performance_ICRA_2015.pdf
+
+-------------------------------------------
