@@ -1,0 +1,17 @@
+Hardware:
+  Teensy 3.6 Board 
+  AS5047 -> Hal Sensor
+  Omnibus F4 V6 -> Flight Controller -> Running INAV
+  one Shot protokol -> 4khz
+  MainMotor - Tarot 4006 / 620KV bürstenloser TL68P02 Motor für Kopien Multicopies (
+  ESC ca 30A
+
+
+Signal path:
+RC -> Omnibus (as PWM, Rol, Pitch Throttle )-> Teensy -> ESC
+=> Optimal RPM = 1000rpm
+
+
+Head:
+ Angle of bearings 35°
+The more the angle is horizontal the better for the motor, but worser to tune

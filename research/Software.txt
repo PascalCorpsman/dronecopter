@@ -1,0 +1,25 @@
+In prinziple the main controlling algorithm of the teensy board:
+
+// -- Calculations
+// motorRads = Angle of the motor given by the HAL sensor
+// pitchCTRL = the pitchvalue from the omniboard
+// rollCTRL = the rollvalue from the omniboard
+// ThrottleIn = the throttlevalue from the omniboard
+if (ThrottleIn > 20) 
+{
+  Duty = ThrottleIn + (pitchCTRL * cos(motorRads)) + (rollCTRL * sin(motorRads))
+} else {
+  Duty = 0;
+}
+
+if (ThrottleIn > 1000)
+{
+  Duty = 0;
+}
+
+// Output
+throttleMap = map(Duty, 0, 1000, 4048, 8096);
+throttleOut = constrain(throttleMap, 4048, 8096);
+
+analogwrite(4, throttleOut);
+
