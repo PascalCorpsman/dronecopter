@@ -1,0 +1,7 @@
+Link: https://brushlesswhoop.com/dshot-and-bidirectional-dshot/
+
+Dshot on Arduino: https://github.com/gueei/DShot-Arduino
+
+Lessons Learned:
+ - the time "0", "1" need to be exakt double (proof with oscilloscop)
+ - The time between two "frames" can go up to 25ms
